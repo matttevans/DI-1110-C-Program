@@ -548,20 +548,21 @@ namespace DI_2108_Example_CSharp_Program
             digOut[5] = Convert.ToDouble(cmbDigOut5.SelectedItem);
             digOut[6] = Convert.ToDouble(cmbDigOut6.SelectedItem);
 
-            foreach(Dataq.Devices.IChannel chan in TargetDevice.Channels) {
+            /*foreach(Dataq.Devices.IChannel chan in TargetDevice.Channels) {
 
                 if(chan.GetType().Equals(typeof(Dataq.Devices.DI1110.DigitalOut))) {
 
-                    /*Dataq.Devices.DI1110.DigitalOut temp = 
-                        (Dataq.Devices.DI1110.DigitalOut)TargetDevice.ChannelFactory(chan, Dataq.Devices.DI1110.DigitalOut);
-                        */
+                    Dataq.Devices.DI1110.DigitalOut temp = 
+                        (Dataq.Devices.DI1110.DigitalOut)TargetDevice.ChannelFactory(chan, Dataq.Devices.DI1110.AnalogVoltageIn);
+                    
+                        
                     temp.DataOut.Clear();
 
                     temp.DataOut.Add(digOut[temp.Number]);
 
                     outputExists = true;
                 }
-            }
+            }*/
 
         }
     }
