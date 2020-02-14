@@ -552,9 +552,9 @@ namespace DI_2108_Example_CSharp_Program
 
                 if(chan.GetType().Equals(typeof(Dataq.Devices.DI1110.DigitalOut))) {
 
-                    Dataq.Devices.DI1110.DigitalOut temp = 
+                    /*Dataq.Devices.DI1110.DigitalOut temp = 
                         (Dataq.Devices.DI1110.DigitalOut)TargetDevice.ChannelFactory(chan, Dataq.Devices.DI1110.DigitalOut);
-
+                        */
                     temp.DataOut.Clear();
 
                     temp.DataOut.Add(digOut[temp.Number]);
